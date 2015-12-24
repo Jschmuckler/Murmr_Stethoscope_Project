@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF6650"
+    >
+
+    <ImageView
+        android:id="@+id/OrganImage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:onClick="clickImage"
+        android:src="@drawable/questionmarklm"
+        />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@+id/Date"
+        android:layout_toRightOf="@+id/OrganImage"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dip"
+        android:text="DateTaken"
+        android:textColor="@android:color/white"
+        android:textSize="12dip" />
+
+    <TextView
+        android:id="@+id/Duration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_toRightOf="@+id/OrganImage"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Duration"
+        android:textColor="@android:color/black"
+        android:textSize="13dip" />
+    <TextView
+        android:id="@+id/Notes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Duration"
+        android:layout_toRightOf="@+id/OrganImage"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Notes"
+        android:textColor="@android:color/black"
+        android:textSize="13dip" />
+    <TextView
+        android:id="@+id/TimeMade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dip"
+        android:text="TimeMade"
+        android:textColor="@android:color/white"
+        android:textSize="12dip" />
+
+
+</RelativeLayout>
